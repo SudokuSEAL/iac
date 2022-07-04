@@ -5,8 +5,8 @@
   window.addEventListener('load', init);
 
   function init() {
-    embedPDF('.brochure-embed', '../docs/uw-iac-brochure.pdf');
-    embedPDF('.expectations-embed', '../docs/what-to-expect.pdf');
+    embedPDF('.brochure-embed', '../docs/uw-iac-brochure.pdf#toolbar=0');
+    embedPDF('.expectations-embed', '../docs/what-to-expect.pdf#toolbar=0');
 
     // if (!navigator.pdfViewerEnabled) {
       

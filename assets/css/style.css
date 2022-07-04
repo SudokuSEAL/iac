@@ -1591,6 +1591,7 @@ section {
   font-size: 13px;
   color: #444444;
 }
+
 @media (max-width: 768px) {
   #footer .copyright,
   #footer .credits {
