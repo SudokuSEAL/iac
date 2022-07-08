@@ -1605,5 +1605,17 @@ section {
 # Assessment Info Page
 --------------------------------------------------------------*/
 .embed {
-  height: 80vh;
+  height: 100vh;
+}
+
+#additional-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#additional-information button {
+  border: none;
+  background-color: #e7f1fd;
+  border-radius: 5px;
 }
