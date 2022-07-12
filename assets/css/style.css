@@ -1608,11 +1608,11 @@ section {
   height: 100vh;
 }
 
-/* #additional-information {
+#additional-information {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 #additional-information #information-flex {
   display: flex;
@@ -1620,6 +1620,7 @@ section {
 }
 
 #additional-information section {
+  padding: 24px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
