@@ -194,7 +194,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -311,7 +311,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #222222;
@@ -1614,10 +1614,27 @@ section {
   align-items: center;
 }
 
+#additional-information #information-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#additional-information section {
+  padding: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #additional-information button {
   border: none;
-  background-color: #e7f1fd;
+  background-color: #4b2e83;
   border-radius: 5px;
+  color: white;
+}
+
+#additional-information img {
+  width: 97%;
 }
 
 /* ---------- Useful Button styling ---------- */
