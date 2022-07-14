@@ -1617,13 +1617,11 @@ section {
 #additional-information #information-flex {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
 }
 
 #additional-information section {
   padding: 24px 0;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -1636,7 +1634,7 @@ section {
 }
 
 #additional-information img {
-  width: 100%;
+  width: 97%;
 }
 
 /* ---------- Useful Button styling ---------- */
