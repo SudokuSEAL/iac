@@ -1619,3 +1619,8 @@ section {
   background-color: #e7f1fd;
   border-radius: 5px;
 }
+
+.email:hover {
+  color: purple;
+  visibility: visible;
+}
