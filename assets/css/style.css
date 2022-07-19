@@ -145,7 +145,7 @@ h3 {
   margin: auto 40px;
 }
 
-#contact {
+.topbar-contact {
   display: flex;
 }
 
