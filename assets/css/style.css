@@ -1672,7 +1672,7 @@ section {
   margin-bottom: 6px;
 }
 [data-tooltip-position="right"]:before {
-  left: 100%;
+  left: 98%;
   margin-left: 6px;
 }
 [data-tooltip-position="bottom"]:before {
@@ -1712,7 +1712,7 @@ section {
   border-top-color: #000;
 }
 [data-tooltip-position="right"]:after {
-  left: 100%;
+  left: 98%;
   border-width: 6px 6px 6px 0;
   border-right-color: #000;
 }

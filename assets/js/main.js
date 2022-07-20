@@ -288,6 +288,7 @@
       // Clipboard API not available
       return
     }
+    // el.data-tooltip.text("Copied!")
     const text = event.target.innerText
     try {
       await navigator.clipboard.writeText(el.id)
