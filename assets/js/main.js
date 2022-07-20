@@ -290,7 +290,7 @@
     }
     const text = event.target.innerText
     try {
-      await navigator.clipboard.writeText(text)
+      await navigator.clipboard.writeText(el.id)
       // event.target.textContent = 'Copied to clipboard'
       console.log("copied")
     } catch (err) {
