@@ -199,7 +199,7 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  const swiper = new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -207,11 +207,37 @@
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next'
+    },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
     }
+  });
+
+  /**
+   * Testimonials slider arrows click to stop autoplay
+   */
+  on('click', '.swiper-button', function (e) {
+    swiper.autoplay.stop();
+  }, true)
+
+  /**
+   * Testimonials slider arrow keys functionality
+   */
+  window.addEventListener('keydown', function (e) {
+    switch(e.key) {
+      case "ArrowLeft":
+        swiper.slidePrev(600, true);
+        break;
+      case "ArrowRight":
+        swiper.slideNext(600, true);
+        break;
+    }
+    swiper.autoplay.stop();
   });
 
   /**
