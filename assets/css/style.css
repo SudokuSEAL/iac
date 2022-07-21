@@ -949,6 +949,10 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #46489c;
 }
+.swiper-button-prev, .swiper-button-next {
+  height: 100px;
+  color: white;
+}
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
