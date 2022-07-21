@@ -304,6 +304,29 @@ h3 {
     left: -100%;
   }
 }
+.dropdown-menu {
+  display: none;
+  background: transparent;
+}
+.navbar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -15px;
+  border-radius: 10px;
+}
+.navbar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted rgb(0, 0, 0);
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+}
 
 /**
 * Mobile Navigation
