@@ -306,6 +306,27 @@
     })
   });
 
+  // Email copying to clipboard code
+  var list = document.querySelectorAll('.email')
+  list.forEach( el => el.addEventListener('click', async event => {
+    if (!navigator.clipboard) {
+      // Clipboard API not available
+      return
+    }
+    // el.data-tooltip.text("Copied!")
+    const text = event.target.innerText
+    try {
+      await navigator.clipboard.writeText(el.id)
+      el.setAttribute("data-tooltip", "Copied!")
+      setTimeout(function rand() {el.setAttribute("data-tooltip", "Click to Copy")}, 3000)
+      console.log("copied")
+    } catch (err) {
+      console.error('Failed to copy!', err)
+    }
+  })
+    
+  );
+
 })()
 
 function AdvancedCopy(text){
