@@ -1762,6 +1762,7 @@ span[data-descr]:hover::after {
   cursor: pointer;
   padding: 4px;
 }
+
 /* Tooltip styling */
 [data-tooltip]:before {
   content: attr(data-tooltip);
