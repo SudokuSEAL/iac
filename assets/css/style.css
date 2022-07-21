@@ -145,7 +145,7 @@ h3 {
   margin: auto 40px;
 }
 
-#contact {
+.topbar-contact {
   display: flex;
 }
 
@@ -949,6 +949,10 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #46489c;
 }
+.swiper-button-prev, .swiper-button-next {
+  height: 100px;
+  color: white;
+}
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
@@ -1113,7 +1117,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  padding: 60px 0;
+  padding-bottom: 0px;
 }
 .team .member {
   margin-bottom: 20px;
@@ -1357,8 +1361,11 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+.contact .info-box button {
+  margin-bottom: 8px;
 }
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
@@ -1431,6 +1438,18 @@ section {
 .contact .php-email-form button[type='submit']:hover {
   background: #85754d;
 }
+
+#directors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#directors > div {
+  margin: auto 12px;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1643,6 +1662,7 @@ section {
 }
 
 /* ---------- Useful Button styling ---------- */
+
 #team button,
 #team button span {
   cursor: pointer;
