@@ -282,7 +282,6 @@
 
   // Email copying to clipboard code
   var list = document.querySelectorAll('.email')
-
   list.forEach( el => el.addEventListener('click', async event => {
     if (!navigator.clipboard) {
       // Clipboard API not available
@@ -292,7 +291,8 @@
     const text = event.target.innerText
     try {
       await navigator.clipboard.writeText(el.id)
-      // event.target.textContent = 'Copied to clipboard'
+      el.setAttribute("data-tooltip", "Copied!")
+      setTimeout(function rand() {el.setAttribute("data-tooltip", "Click to Copy")}, 3000)
       console.log("copied")
     } catch (err) {
       console.error('Failed to copy!', err)
@@ -300,6 +300,5 @@
   })
     
   );
-  
 
 })()
