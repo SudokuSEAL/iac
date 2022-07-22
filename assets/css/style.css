@@ -437,8 +437,8 @@ h3 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 75vh;
-  background: url('../../images/seattle.jpg') top left;
+  height: 35vh;
+  background: url('../../images/seattle.jpg') left bottom;
   background-size: cover;
   position: relative;
   text-align: right;
