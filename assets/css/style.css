@@ -315,6 +315,7 @@ h3 {
   margin-left: -15px;
   border-radius: 10px;
 }
+
 .navbar ul li:hover .dropdown-menu ul {
   display: block;
   margin: 10px;
@@ -326,6 +327,33 @@ h3 {
   background: transparent;
   border-radius: 0px;
   text-align: left;
+}
+
+/**
+* Desktop Navigation (Home Page)
+*/
+
+.navbanner ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  transform: translateY(-50%);
+}
+
+.navbanner a {
+  color: #fff;
+  text-decoration: underline rgba(0, 0, 0, 0) 1px;
+  transition: text-decoration-color 0.3s;
+}
+
+.navbanner a:hover {
+  text-decoration-color: #fff;
 }
 
 /**
