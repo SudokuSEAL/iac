@@ -442,7 +442,9 @@ h3 {
   background-size: cover;
   position: relative;
   text-align: right;
+  overflow: hidden;
 }
+
 #hero:before {
   content: '';
   background: rgba(255, 255, 255, 0.6);
@@ -452,6 +454,7 @@ h3 {
   left: 0;
   right: 0;
 }
+
 #hero .container {
   position: relative;
   display: flex;
