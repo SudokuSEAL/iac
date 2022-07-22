@@ -16,6 +16,7 @@
   <!-- Import Font Awesome for icons -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
   <!-- Google Fonts -->
   <link
@@ -31,7 +32,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css?v=22071903" rel="stylesheet">
+  <link href="assets/css/style.css?v=22072103" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
@@ -47,8 +48,8 @@
   <section id="topbar">
     <div>University of Washington Industrial Assessment Center</div>
     <div class="topbar-contact">
-      <div>mamishev<span class="fa fa-at"></span>ece.uw.edu</div>
-      <div>(206) 221-5729</div>
+      <div class="email" id="uwiac@uw.edu" data-tooltip="Click to Copy"
+        data-tooltip-position="left">uwiac<span class="fa fa-at"></span>uw.edu</div>
     </div>
   </section>
 
@@ -66,7 +67,17 @@
           <li><a class="nav-link scrollto" href="news.html">News</a></li>
           <li><a class="nav-link scrollto" href="people.html">Team</a></li>
 
-          <li><a class="nav-link scrollto active" href="javascript:void(0);">Contact</a>
+          <li><a class="nav-link scrollto active" href="javascript:void(0);">Contact</a></li>
+          <li>
+            <a class="nav-link scrollto">IAC Resources <i class="fas fa-caret-down"></i> </a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a target="_blank" rel="noreferrer" href="https://iac.university/caseStudies">Case
+                    Studies</a></li>
+                <li><a target="_blank" rel="noreferrer"
+                    href="https://iac.university/cybersecurity">Cybersecurity</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -89,27 +100,51 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Address</h3>
-              <button
-                onclick="AdvancedCopy('215K ECE, Campus Box 352500, University of Washington, Seattle WA 98195')"
-                class="button">
-                <span tabindex="0" data-descr="Click to Copy">215K ECE, Campus Box 352500,
-                  University of Washington, Seattle WA 98195</span>
-              </button>
+              <span>
+                <div class="email"
+                  id="215K ECE, Campus Box 352500, University of Washington, Seattle WA 98195"
+                  data-tooltip="Click to Copy" data-tooltip-position="bottom">215K ECE,
+                  Campus Box 352500,
+                  University of Washington, Seattle WA 98195</div>
+              </span>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
-              <h3>Email</h3>
-              <button class="button" onclick="AdvancedCopy('mamishev@ece.uw.edu')">
-                <span tabindex="0" data-descr="Click to Copy">mamishev<i
-                    class="fa fa-at"></i>ece.uw.edu</span>
-              </button>
+              <h3>Email Us</h3>
+              <div id="directors">
+                <div>
+                  <p>Center-Wide</p>
+                  <div class="email" id="uwiac@uw.edu" data-tooltip="Click to Copy"
+                    data-tooltip-position="bottom">
+                    uwiac<i class="fa fa-at"></i>uw.edu</div>
+                </div>
+
+                <div>
+                  <p>Director</p>
+                  <div class="email" id="mamishev@ece.uw.edu" data-tooltip="Click to Copy"
+                    data-tooltip-position="bottom">
+                    mamishev
+                    <i class="fa fa-at"></i>
+                    ece.uw.edu
+                  </div>
+                </div>
+                <div>
+                  <p>Associate Director</p>
+                  <div class="email" id="rhussein@uw.edu" data-tooltip="Click to Copy"
+                    data-tooltip-position="bottom">
+                    rhussein
+                    <i class="fa fa-at"></i>
+                    uw.edu
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <!-- <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Phone</h3>
@@ -117,7 +152,7 @@
                 <span tabindex="0" data-descr="Click to Copy">(206) 221-5729</span>
               </button>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -228,18 +263,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h4>Schedule an Assessment</h4>
-            <p>If you are interested in working with the IAC, please e-mail Professor
-              Alexander
-              Mamishev
-              <b>
-                <!--<a href="mailto:mamishev@ece.uw.edu" target="_blank">HERE</a>
-                <a onclick="AdvancedCopy('mamishev@ece.uw.edu')" class="button">HERE</a>-->
-                <button class="button" onclick="AdvancedCopy('mamishev@ece.uw.edu')">
-                  <span tabindex="0" data-descr="Click to Copy">mamishev<i
-                      class="fa fa-at"></i>ece.uw.edu</span>
-                </button>
-              </b>
+            <p>
+              If you are interested in working with the IAC, please send us an email
             </p>
+            <h4 class="email" id="uwiac@uw.edu" data-tooltip="Click to Copy"
+              data-tooltip-position="bottom">uwiac<i
+                class="fa fa-at"></i>uw.edu</span></b>
           </div>
         </div>
       </div>
@@ -262,7 +291,7 @@
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js?v=22070901"></script>
+  <script src="assets/js/main.js?v=22072101"></script>
 
 </body>
 

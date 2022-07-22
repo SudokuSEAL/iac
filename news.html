@@ -16,6 +16,7 @@
   <!-- Import Font Awesome for icons -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
   <!-- Google Fonts -->
   <link
@@ -31,7 +32,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css?v=22071903" rel="stylesheet">
+  <link href="assets/css/style.css?v=22072103" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
@@ -47,8 +48,7 @@
   <section id="topbar">
     <div>University of Washington Industrial Assessment Center</div>
     <div class="topbar-contact">
-      <div>mamishev<span class="fa fa-at"></span>ece.uw.edu</div>
-      <div>(206) 221-5729</div>
+      <div class="email" id="uwiac@uw.edu" data-tooltip="Click to Copy" data-tooltip-position="left">uwiac<span class="fa fa-at"></span>uw.edu</div>
     </div>
   </section>
 
@@ -67,6 +67,17 @@
           <li><a class="nav-link scrollto" href="people.html">Team</a></li>
 
           <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+          <li>
+            <a class="nav-link scrollto">IAC Resources <i class="fas fa-caret-down"></i> </a>
+            <div class="dropdown-menu">
+              <ul>
+              <li><a target="_blank" rel="noreferrer" href="https://iac.university/caseStudies">Case
+                  Studies</a></li>
+              <li><a target="_blank" rel="noreferrer"
+                  href="https://iac.university/cybersecurity">Cybersecurity</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -89,7 +100,6 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-news">News</li>
-              <li data-filter=".filter-app">Media Archive</li>
             </ul>
           </div>
         </div>
@@ -98,7 +108,7 @@
           <div
             class="col-md-6 col-lg-4 d-flex portfolio-item filter-news align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">September 29, 2021</a></h4>
+              <h4 class="title">September 29, 2021</h4>
               <p class="description">
               <p class="card-text">
               <H3>UW IAC Returns!</H3> After a 10 year hiatus, UW is once again a host to
@@ -111,16 +121,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="images/news-1.JPG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Alex coming down</h4>
-            </div>
           </div>
 
 
           <div
             class="col-md-6 col-lg-4 d-flex portfolio-item filter-news align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">July 01, 2011</a></h4>
+              <h4 class="title">July 01, 2011</h4>
               <p class="description">
               <p class="card-text">
               <H3>Project Completion</H3>IAC at the University of Washington has
@@ -136,23 +143,17 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="images/news-2.JPG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Foss Tugboat</h4>
-            </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="images/news-3.JPG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>On the roof of admin bldg</h4>
-            </div>
           </div>
 
 
           <div
             class="col-md-6 col-lg-4 d-flex portfolio-item filter-news align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">September 26, 2007</a></h4>
+              <h4 class="title">September 26, 2007</h4>
               <p class="description">
               <p class="card-text">
               <H3>Save Energy Now Workshop</H3>As part of the Fall quarter Energy
@@ -167,15 +168,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="images/news-4.JPG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Assessments in progress</h4>
-            </div>
           </div>
 
           <div
             class="col-md-6 col-lg-4 d-flex portfolio-item filter-news align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">April 30, 2007</a></h4>
+              <h4 class="title">April 30, 2007</h4>
               <p class="description">
               <p class="card-text">
               <H3>Washington CEO Article on UW IAC</H3>Free Factory
@@ -201,18 +199,10 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h4>Schedule an Assessment</h4>
-            <p>If you are interested in working with the IAC, please e-mail Professor
-              Alexander
-              Mamishev
-              <b>
-                <!--<a href="mailto:mamishev@ece.uw.edu" target="_blank">HERE</a>
-                <a onclick="AdvancedCopy('mamishev@ece.uw.edu')" class="button">HERE</a>-->
-                <button class="button" onclick="AdvancedCopy('mamishev@ece.uw.edu')">
-                  <span tabindex="0" data-descr="Click to Copy">mamishev<i
-                      class="fa fa-at"></i>ece.uw.edu</span>
-                </button>
-              </b>
+            <p>
+              If you are interested in working with the IAC, please send us an email
             </p>
+            <h4 class="email" id="uwiac@uw.edu" data-tooltip="Click to Copy" data-tooltip-position="bottom">uwiac<i class="fa fa-at"></i>uw.edu</span></b>
           </div>
         </div>
       </div>
@@ -235,7 +225,7 @@
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js?v=22070901"></script>
+  <script src="assets/js/main.js?v=22072101"></script>
 
 </body>
 

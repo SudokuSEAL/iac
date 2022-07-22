@@ -304,13 +304,34 @@ h3 {
     left: -100%;
   }
 }
+.dropdown-menu {
+  display: none;
+  background: transparent;
+}
+.navbar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -15px;
+  border-radius: 10px;
+}
+
+.navbar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted rgb(0, 0, 0);
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+}
 
 /**
-* Desktop Navigation (About Page)
+* Desktop Navigation (Home Page)
 */
-#pages {
-  background-color: #46489c;
-}
 
 .navbanner ul {
   margin: 0;
@@ -559,7 +580,7 @@ h3 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0 0 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -979,7 +1000,8 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #46489c;
 }
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   height: 100px;
   color: white;
 }
@@ -1147,7 +1169,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  padding: 60px 0;
+  padding-bottom: 0px;
 }
 .team .member {
   margin-bottom: 20px;
@@ -1391,8 +1413,11 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+.contact .info-box button {
+  margin-bottom: 8px;
 }
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
@@ -1465,6 +1490,18 @@ section {
 .contact .php-email-form button[type='submit']:hover {
   background: #85754d;
 }
+
+#directors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#directors > div {
+  margin: auto 12px;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1759,4 +1796,118 @@ span[data-descr]:hover::after {
   color: #000000;
   font-size: 12px;
   z-index: 1;
+}
+
+.email {
+  display: inline;
+}
+
+.email:hover {
+  color: #6794f9;
+  visibility: visible;
+}
+
+[data-tooltip] {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Tooltip styling */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  background: #000;
+  color: rgb(255, 255, 255);
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 4px;
+}
+/* Dynamic horizontal centering */
+[data-tooltip-position='top']:before,
+[data-tooltip-position='bottom']:before {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* Dynamic vertical centering */
+[data-tooltip-position='right']:before,
+[data-tooltip-position='left']:before {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+[data-tooltip-position='top']:before {
+  bottom: 100%;
+  margin-bottom: 6px;
+}
+[data-tooltip-position='right']:before {
+  left: 100%;
+  margin-left: 6px;
+}
+[data-tooltip-position='bottom']:before {
+  top: 80%;
+  margin-top: 6px;
+}
+[data-tooltip-position='left']:before {
+  right: 100%;
+  margin-right: 6px;
+}
+
+/* Tooltip arrow styling/placement */
+[data-tooltip]:after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+/* Dynamic horizontal centering for the tooltip */
+[data-tooltip-position='top']:after,
+[data-tooltip-position='bottom']:after {
+  left: 50%;
+  margin-left: -6px;
+}
+/* Dynamic vertical centering for the tooltip */
+[data-tooltip-position='right']:after,
+[data-tooltip-position='left']:after {
+  top: 50%;
+  margin-top: -6px;
+}
+[data-tooltip-position='top']:after {
+  bottom: 100%;
+  border-width: 6px 6px 0;
+  border-top-color: #000;
+}
+[data-tooltip-position='right']:after {
+  left: 100%;
+  border-width: 6px 6px 6px 0;
+  border-right-color: #000;
+}
+[data-tooltip-position='bottom']:after {
+  top: 80%;
+  border-width: 0 6px 6px;
+  border-bottom-color: #000;
+}
+[data-tooltip-position='left']:after {
+  right: 100%;
+  border-width: 6px 0 6px 6px;
+  border-left-color: #000;
+}
+/* Show the tooltip when hovering */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  display: block;
+  z-index: 50;
 }
